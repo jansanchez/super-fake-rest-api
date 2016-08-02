@@ -17,6 +17,7 @@
   "bin": {},
   "scripts": {
     "start": "pm2-dev run index.js",
+    "server": "json-server index.js",
     "es5": "webpack -w",
     "lint": "xo *.js"
   },
@@ -34,7 +35,11 @@
     "url": "https://github.com/jansanchez/super-fake-rest-api/issues"
   },
   "homepage": "https://github.com/jansanchez/super-fake-rest-api#readme",
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^3.1.0",
+    "json-server": "^0.8.17",
+    "lodash": "^4.14.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-loader": "^6.2.4",
